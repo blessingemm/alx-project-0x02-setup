@@ -1,14 +1,12 @@
-import React from 'react';
-import { UserProps } from '@/interfaces';
+import React from "react";
+import { UserProps } from "@/interfaces";
 
 const UserCard: React.FC<UserProps> = ({ name, email, address }) => {
   return (
-    <div className="bg-white rounded-md shadow p-4 border">
-      <h2 className="text-xl font-bold text-blue-700">{name}</h2>
-      <p className="text-gray-600">{email}</p>
-      <p className="text-gray-500">
-        {address.street}, {address.suite}, {address.city}, {address.zipcode}
-      </p>
+    <div className="border rounded-md p-4 shadow-md bg-white text-gray-900 max-w-md mx-auto">
+      <h2 className="text-xl font-semibold mb-2">{name}</h2>
+      <p><strong>Email:</strong> {email}</p>
+      <p><strong>Address:</strong> {address}</p>
     </div>
   );
 };
