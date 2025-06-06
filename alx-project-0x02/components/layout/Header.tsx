@@ -16,6 +16,9 @@ const Header = () => {
       <Link href="/posts" className="hover:underline">
         Posts
       </Link>
+      <Link href="/users" className="hover:underline">
+        Users
+      </Link>
     </nav>
   </header>
   );
