@@ -1,7 +1,5 @@
 # alx-project-0x02-setup
 
-# Next.js Project Setup and Basics
-
 Welcome to **alx-project-0x02-setup**!  
 This repository serves as a foundational project for setting up and working with **Next.js**, **TypeScript**, and **Tailwind CSS**. It is part of a hands-on learning experience designed to build modern, responsive web applications using best practices and real-world tools.
 
