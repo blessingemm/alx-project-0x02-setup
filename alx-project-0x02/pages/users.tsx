@@ -15,7 +15,9 @@ const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
       </Head>
       <Header />
       <main className="p-8 max-w-4xl mx-auto space-y-6">
-        <h1 className="text-3xl font-bold text-blue-700 text-center mb-4">User Directory</h1>
+        <h1 className="text-3xl font-bold text-blue-700 text-center mb-4">
+          User Directory
+        </h1>
         {users.map((user) => (
           <UserCard key={user.id} {...user} />
         ))}
