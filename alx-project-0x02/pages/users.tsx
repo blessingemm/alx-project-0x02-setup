@@ -29,6 +29,7 @@ const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
   );
 };
 
+
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
@@ -36,7 +37,7 @@ export const getStaticProps = async () => {
   const users: UserProps[] = data.map((user: any) => ({
     name: user.name,
     email: user.email,
-    address: `${user.address.street}, ${user.address.city}`, // format address string
+    address: `${user.address.street}, ${user.address.city}`,
   }));
 
   return {
